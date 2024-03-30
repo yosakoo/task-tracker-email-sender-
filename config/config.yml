@@ -1,0 +1,9 @@
+rabbitmq:
+  exchange: "emails"
+  exchange_type: "direct"
+  queue: "user_emails"
+  consumer_tag: "allbyk"
+logger:
+  log_level: 'debug'
+smtp_server:
+  port: 587
