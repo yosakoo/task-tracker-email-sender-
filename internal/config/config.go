@@ -26,7 +26,7 @@ type (
 	SmtpServer struct{
 		From       string   
 		Password   string  
-		Server string   
+		Server 	   string   
 		Port       int      `yaml:"port"`
 	}
 )
@@ -52,6 +52,7 @@ func NewConfig() (*Config, error) {
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println(cfg.SmtpServer)
 
 	return cfg, nil
 }
